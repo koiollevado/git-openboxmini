@@ -28,6 +28,8 @@ sudo apt search chromium-browser
 sudo apt search firefox
 sudo apt search lxterminal
 
+clear
+
 sudo apt install xinit
 sudo apt install slim
 sudo apt install openbox
