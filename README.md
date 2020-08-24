@@ -1,4 +1,5 @@
 # git-openboxmini
-Instalador de pacotes essenciais do pós instalação ubuntuminimal para configurá-lo.
+Script de instalação de pacotes essenciais do pós instalação ubuntu-minimal para torná-lo operável graficamente.
 
-Recomenda-se utilizá-lo, logo após a instalação do driver de vídeo do seu computador.
+Recomenda-se utilizá-lo após instalação do ubuntu-minimal para agilizar a instalação dos demais pacotes.
+Recomenda-se também, saber a configuração do computador e os periféricos a ser instalados.
