@@ -1,1 +1,53 @@
+sudo passwd root
+sudo apt update
+sudo apt upgrade
 
+lspc1 | grep vga
+
+sudo apt search "nome do drive"
+sudo apt install "nome do drive"
+
+sudo update-initramfs -u
+
+sudo apt search xinit
+sudo apt search slim
+sudo apt search openbox
+sudo apt search obconf
+sudo apt search lxappearance
+sudo apt search wicd
+sudo apt search wicd-curses
+sudo apt search pulseaudio
+sudo apt search pavucontrol
+sudo apt search pcmanfm
+sudo apt search conky
+sudo apt search xarchiver
+sudo apt search leafpad
+sudo apt search feh
+sudo apt search chromium-browser
+sudo apt search firefox
+sudo apt search lxterminal
+
+sudo apt install xinit
+sudo apt install slim
+sudo apt install openbox
+sudo apt install obconf
+sudo apt install lxappearance
+sudo apt install wicd
+sudo apt install wicd-curses
+sudo apt install pulseaudio
+sudo apt install pavucontrol
+sudo apt install pcmanfm
+sudo apt install conky
+sudo apt install xarchiver
+sudo apt install leafpad
+sudo apt install feh
+sudo apt install chromium-browser
+sudo apt install firefox
+sudo apt install lxterminal
+
+sudo apt-get install vlc --no-install-recommends --no-install-suggests
+sudo apt-get install gedit --no-install-recommends --no-install-suggests
+
+sudo apt remove xserver-xorg-video-*
+sudo apt remove uxterm xterm
+sudo apt autoremove
