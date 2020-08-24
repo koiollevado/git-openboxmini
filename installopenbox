@@ -3,9 +3,10 @@ sudo apt update
 sudo apt upgrade
 
 lspc1 | grep vga
-
-sudo apt search "nome do drive"
-sudo apt install "nome do drive"
+echo "Insira o nome do drive vga listado: " ; read driver
+sudo apt search $driver
+echo "Insira o nome do pacote a ser instalado: " ; read pack
+sudo apt install $pack
 
 sudo update-initramfs -u
 
