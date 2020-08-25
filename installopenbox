@@ -95,10 +95,10 @@ fi
 
 echo " "
 echo " "
-echo "Deseja instalar o editor de texto gedit?"
-echo "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read gedit
+echo "Deseja instalar o reprodutor de midia vlc?"
+echo "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read vlc
 
-if [ $gedit -eq s ]
+if [ $vlc -eq s ]
 then
     sudo apt search vlc
     sudo apt-get install vlc --no-install-recommends --no-install-suggests
@@ -109,6 +109,10 @@ else
 fi
 
 
-sudo apt remove xserver-xorg-video-*
-sudo apt remove uxterm xterm
-sudo apt autoremove
+#sudo apt remove xserver-xorg-video-*
+#sudo apt remove uxterm xterm
+
+sudo apt-get install -f
+sudo apt-get autoremove
+sudo apt-get clean
+sudo apt-get autoclean
