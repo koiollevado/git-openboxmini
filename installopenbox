@@ -107,7 +107,7 @@ esac
 echo " "
 echo " "
 echo "Deseja instalar o reprodutor de midia vlc?"
-echo -n "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read vlc
+echo -n "Digite (S)im ou (N)ao. Tecle Enter para confirmar: " ; read vlc
 
 case "$vlc" in
     s|S|y|Y|"")
