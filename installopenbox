@@ -1,14 +1,39 @@
+#!/bin/bash
+
 sudo passwd root
-sudo apt update
-sudo apt upgrade
 
-lspc1 | grep vga
-echo "Insira o nome do drive vga listado: " ; read driver
-sudo apt search $driver
-echo "Insira o nome do pacote a ser instalado: " ; read pack
-sudo apt install $pack
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install -f
+sudo apt-get autoremove
+sudo apt-get clean
+sudo apt-get autoclean
 
-sudo update-initramfs -u
+echo " "
+echo " "
+echo "Deseja instalar o drive proprietario de video?"
+echo "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read resposta
+
+if [ $resposta -eq s ]
+then
+    lspc1 | grep vga
+    echo "Insira o nome do drive vga listado: " ; read driver
+    sudo apt search $driver
+    echo "Insira o nome do pacote a ser instalado: " ; read pacote
+    sudo apt install $pacote
+    sudo apt-get install -f
+    sudo update-initramfs -u
+    sudo reboot
+else    
+    echo "Continuemos o procedimento de instalacao de outros pacotes."
+    sleep 5
+    clear
+fi
+
+echo " "
+echo " "
+echo "Pesquisando aplicativos no repositorio para a instalacao. Aguarde..."
+sleep 5
 
 sudo apt search xinit
 sudo apt search slim
@@ -30,6 +55,11 @@ sudo apt search lxterminal
 
 clear
 
+echo " "
+echo " "
+echo "Iniciando a instalacao de aplicativos do repositorio. Aguarde..."
+sleep 5
+
 sudo apt install xinit
 sudo apt install slim
 sudo apt install openbox
@@ -48,8 +78,34 @@ sudo apt install chromium-browser
 sudo apt install firefox
 sudo apt install lxterminal
 
-sudo apt-get install vlc --no-install-recommends --no-install-suggests
-sudo apt-get install gedit --no-install-recommends --no-install-suggests
+echo " "
+echo " "
+echo "Deseja instalar o editor de texto gedit?"
+echo "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read gedit
+
+if [ $gedit -eq s ]
+then
+    sudo apt-get install gedit --no-install-recommends --no-install-suggests
+else    
+    echo "Continuemos o procedimento de instalacao de outros pacotes."
+    sleep 5
+    clear
+fi
+
+echo " "
+echo " "
+echo "Deseja instalar o editor de texto gedit?"
+echo "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read gedit
+
+if [ $gedit -eq s ]
+then
+    sudo apt-get install vlc --no-install-recommends --no-install-suggests
+else    
+    echo "Continuemos o procedimento de instalacao de outros pacotes."
+    sleep 5
+    clear
+fi
+
 
 sudo apt remove xserver-xorg-video-*
 sudo apt remove uxterm xterm
