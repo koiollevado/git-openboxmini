@@ -11,8 +11,8 @@ sudo apt-get autoclean
 
 echo " "
 echo " "
-echo "Deseja instalar o drive proprietario de video?"
-echo -n "Digite (S)im ou (N)ao. Tecle Enter para confirmar: " ; read resposta
+echo "Deseja instalar o drive proprietário de vídeo?"
+echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read resposta
 
 case "$resposta" in
     s|S|y|Y|"")
@@ -26,7 +26,7 @@ case "$resposta" in
             sudo reboot
     ;;
     n|N)
-            echo "Continuemos o procedimento de instalacao de outros pacotes."
+            echo "Continuemos o procedimento de instalação de outros pacotes."
             sleep 5
             clear
     ;;
@@ -38,7 +38,7 @@ esac
 
 echo " "
 echo " "
-echo "Pesquisando aplicativos no repositorio para a instalacao. Aguarde..."
+echo "Pesquisando aplicativos no repositório para a instalação. Aguarde..."
 sleep 5
 
 sudo apt search xinit
@@ -63,7 +63,7 @@ clear
 
 echo " "
 echo " "
-echo "Iniciando a instalacao de aplicativos do repositorio. Aguarde..."
+echo "Iniciando a instalação de aplicativos do repositório. Aguarde..."
 sleep 5
 
 sudo apt install xinit
@@ -87,7 +87,7 @@ sudo apt install lxterminal
 echo " "
 echo " "
 echo "Deseja instalar o editor de texto gedit?"
-echo -n "Digite (S)im ou (N)ao. Tecle Enter para confirmar: " ; read gedit
+echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read gedit
 
 case "$gedit" in
     s|S|y|Y|"")
@@ -95,7 +95,7 @@ case "$gedit" in
             sudo apt-get install gedit --no-install-recommends --no-install-suggests
     ;;
     n|N)
-            echo "Continuemos o procedimento de instalacao de outros pacotes."
+            echo "Continuemos o procedimento de instalação de outros pacotes."
             sleep 5
             clear
     ;;
@@ -106,8 +106,8 @@ esac
 
 echo " "
 echo " "
-echo "Deseja instalar o reprodutor de midia vlc?"
-echo -n "Digite (S)im ou (N)ao. Tecle Enter para confirmar: " ; read vlc
+echo "Deseja instalar o reprodutor de mídia vlc?"
+echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read vlc
 
 case "$vlc" in
     s|S|y|Y|"")
@@ -115,7 +115,7 @@ case "$vlc" in
             sudo apt-get install vlc --no-install-recommends --no-install-suggests
     ;;
     n|N)
-            echo "Continuemos o procedimento de instalacao de outros pacotes."
+            echo "Continuemos o procedimento de instalação de outros pacotes."
             sleep 5
             clear
     ;;
