@@ -12,23 +12,29 @@ sudo apt-get autoclean
 echo " "
 echo " "
 echo "Deseja instalar o drive proprietario de video?"
-echo "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read resposta
+echo -n "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read resposta
 
-if [ $resposta -eq s ]
-then
-    lspc1 | grep vga
-    echo "Insira o nome do drive vga listado: " ; read driver
-    sudo apt search $driver
-    echo "Insira o nome do pacote a ser instalado: " ; read pacote
-    sudo apt install $pacote
-    sudo apt-get install -f
-    sudo update-initramfs -u
-    sudo reboot
-else    
-    echo "Continuemos o procedimento de instalacao de outros pacotes."
-    sleep 5
-    clear
-fi
+case "$resposta" in
+    s|S|y|Y|"")
+            lspc1 | grep vga
+            echo "Insira o nome do drive vga listado: " ; read driver
+            sudo apt search $driver
+            echo "Insira o nome do pacote a ser instalado: " ; read pacote
+            sudo apt install $pacote
+            sudo apt-get install -f
+            sudo update-initramfs -u
+            sudo reboot
+    ;;
+    n|N)
+            echo "Continuemos o procedimento de instalacao de outros pacotes."
+            sleep 5
+            clear
+    ;;
+    *)
+            echo "Opção inválida"
+    ;;
+esac
+
 
 echo " "
 echo " "
@@ -81,33 +87,42 @@ sudo apt install lxterminal
 echo " "
 echo " "
 echo "Deseja instalar o editor de texto gedit?"
-echo "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read gedit
+echo -n "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read gedit
 
-if [ $gedit -eq s ]
-then
-    sudo apt search gedit
-    sudo apt-get install gedit --no-install-recommends --no-install-suggests
-else    
-    echo "Continuemos o procedimento de instalacao de outros pacotes."
-    sleep 5
-    clear
-fi
+case "$gedit" in
+    s|S|y|Y|"")
+            sudo apt search gedit
+            sudo apt-get install gedit --no-install-recommends --no-install-suggests
+    ;;
+    n|N)
+            echo "Continuemos o procedimento de instalacao de outros pacotes."
+            sleep 5
+            clear
+    ;;
+    *)
+            echo "Opção inválida"
+    ;;
+esac
 
 echo " "
 echo " "
 echo "Deseja instalar o reprodutor de midia vlc?"
-echo "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read vlc
+echo -n "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read vlc
 
-if [ $vlc -eq s ]
-then
-    sudo apt search vlc
-    sudo apt-get install vlc --no-install-recommends --no-install-suggests
-else    
-    echo "Continuemos o procedimento de instalacao de outros pacotes."
-    sleep 5
-    clear
-fi
-
+case "$vlc" in
+    s|S|y|Y|"")
+            sudo apt search vlc
+            sudo apt-get install vlc --no-install-recommends --no-install-suggests
+    ;;
+    n|N)
+            echo "Continuemos o procedimento de instalacao de outros pacotes."
+            sleep 5
+            clear
+    ;;
+    *)
+            echo "Opção inválida"
+    ;;
+esac
 
 #sudo apt remove xserver-xorg-video-*
 #sudo apt remove uxterm xterm
