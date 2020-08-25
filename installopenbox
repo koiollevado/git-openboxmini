@@ -12,7 +12,7 @@ sudo apt-get autoclean
 echo " "
 echo " "
 echo "Deseja instalar o drive proprietario de video?"
-echo -n "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read resposta
+echo -n "Digite (S)im ou (N)ao. Tecle Enter para confirmar: " ; read resposta
 
 case "$resposta" in
     s|S|y|Y|"")
@@ -87,7 +87,7 @@ sudo apt install lxterminal
 echo " "
 echo " "
 echo "Deseja instalar o editor de texto gedit?"
-echo -n "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read gedit
+echo -n "Digite (S)im ou (N)ao. Tecle Enter para confirmar: " ; read gedit
 
 case "$gedit" in
     s|S|y|Y|"")
