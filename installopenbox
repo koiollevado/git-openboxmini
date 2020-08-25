@@ -85,6 +85,7 @@ echo "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read gedit
 
 if [ $gedit -eq s ]
 then
+    sudo apt search gedit
     sudo apt-get install gedit --no-install-recommends --no-install-suggests
 else    
     echo "Continuemos o procedimento de instalacao de outros pacotes."
@@ -99,6 +100,7 @@ echo "Digite (s)im ou (n)ao. Tecle Enter para confirmar: " ; read gedit
 
 if [ $gedit -eq s ]
 then
+    sudo apt search vlc
     sudo apt-get install vlc --no-install-recommends --no-install-suggests
 else    
     echo "Continuemos o procedimento de instalacao de outros pacotes."
