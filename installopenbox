@@ -126,7 +126,7 @@ esac
 
 echo " "
 echo " "
-echo "Deseja desinstalar o driver de video nouveau"
+echo "Deseja desinstalar o driver de video nouveau?"
 echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read nouveau
 
 case "$nouveau" in
@@ -144,6 +144,27 @@ case "$nouveau" in
 esac
 
 #sudo apt remove uxterm xterm
+
+echo " "
+echo " "
+echo "Deseja instalar o suporte para impressora ou scanner?"
+echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read periferic
+
+case "$periferic" in
+    s|S|y|Y|"")
+            sudo apt install lsb
+            echo "O suporte para impressoras e scanner foi instalado. Após a inicialização gráfica, instale os drivers mais recentes de acordo com o modelo."
+            sleep 5
+    ;;
+    n|N)
+            echo "Continuemos o procedimento de instalação de outros pacotes."
+            sleep 5
+            clear
+    ;;
+    *)
+            echo "Opção inválida"
+    ;;
+esac
 
 sudo apt-get install -f
 sudo apt-get autoremove
