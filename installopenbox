@@ -124,7 +124,25 @@ case "$vlc" in
     ;;
 esac
 
-#sudo apt remove xserver-xorg-video-*
+echo " "
+echo " "
+echo "Deseja desinstalar o driver de video nouveau"
+echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read nouveau
+
+case "$nouveau" in
+    s|S|y|Y|"")
+            sudo apt purge xserver-xorg-video-nouveau
+    ;;
+    n|N)
+            echo "Continuemos o procedimento de instalação de outros pacotes."
+            sleep 5
+            clear
+    ;;
+    *)
+            echo "Opção inválida"
+    ;;
+esac
+
 #sudo apt remove uxterm xterm
 
 sudo apt-get install -f
