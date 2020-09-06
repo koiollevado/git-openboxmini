@@ -216,9 +216,9 @@ clear
 echo " "
 echo " "
 echo "Deseja instalar programa xsane scanner?"
-echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read xsane
+echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read scanner
 
- case "$xsane" in
+ case "$scanner" in
         s|S|y|Y|"")
             sudo apt search xsane
             sudo apt search libsane-extras
@@ -237,8 +237,6 @@ echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read xsane
             echo "Opção inválida"
     ;;
 esac
-
-clear
 
 sudo apt-get install -f
 sudo apt-get autoremove
