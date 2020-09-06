@@ -198,7 +198,7 @@ case "$periferic" in
         echo "O suporte para instalação de impressoras e scanners foi instalado."
         echo "Após a inicialização gráfica, instale os drivers mais recentes de acordo com o seu modelo.
         sleep 5
-        clear       
+        clear
     ;;
     n|N)
         echo "Continuemos o procedimento de instalação de outros pacotes."
@@ -224,7 +224,7 @@ case "$scanner" in
         sudo apt search sane-utils
         clear
         sudo apt install sane-utils libsane-extras xsane
-        sudo adduser $USER scanner              
+        sudo adduser $USER scanner
     ;;
     n|N)
         echo "Continuemos o procedimento de instalação de outros pacotes."
