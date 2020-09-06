@@ -215,26 +215,30 @@ clear
 
 echo " "
 echo " "
-echo "Deseja instalar o programa xsane scanner?"
+echo "Deseja instalar programa xsane scanner?"
 echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read xsane
-case "$xsane" in
-    s|S|y|Y|"")
+
+ case "$xsane" in
+        s|S|y|Y|"")
             sudo apt search xsane
             sudo apt search libsane-extras
             sudo apt search sane-utils
             clear
             sudo apt install sane-utils libsane-extras xsane
             sudo adduser $USER scanner
+                
     ;;
-       n|N)
+    n|N)
             echo "Continuemos o procedimento de instalação de outros pacotes."
             sleep 5
             clear
     ;;
-        *)
+    *)
             echo "Opção inválida"
     ;;
-esac 
+esac
+
+clear
 
 sudo apt-get install -f
 sudo apt-get autoremove
