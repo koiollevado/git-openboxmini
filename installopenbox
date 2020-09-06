@@ -210,8 +210,6 @@ case "$periferic" in
  ;;
 esac
 
-clear
-
 echo " "
 echo " "
 echo "Deseja instalar programa xsane scanner?"
