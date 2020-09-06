@@ -191,6 +191,7 @@ echo " "
 echo " "
 echo "Deseja instalar o suporte para impressora ou scanner?"
 echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read periferic
+
 case "$periferic" in
     s|S|y|Y|"")
         sudo apt install lsb
@@ -215,6 +216,7 @@ echo " "
 echo " "
 echo "Deseja instalar programa xsane scanner?"
 echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read scanner
+
 case "$scanner" in
     s|S|y|Y|"")
         sudo apt search xsane
