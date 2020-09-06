@@ -1,6 +1,24 @@
 #!/bin/bash
 
-sudo passwd root
+echo " "
+echo " "
+echo "Deseja criar uma senha para o usuário root?"
+echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read root
+
+case "$root" in
+    s|S|y|Y|"")
+        sudo passwd root
+        clear
+    ;;
+    n|N)
+            echo "Continuemos o procedimento de instalação."
+            sleep 5
+            clear
+    ;;
+    *)
+            echo "Opção inválida"
+    ;;
+esac
 
 sudo apt-get update
 sudo apt-get upgrade
@@ -8,6 +26,8 @@ sudo apt-get install -f
 sudo apt-get autoremove
 sudo apt-get clean
 sudo apt-get autoclean
+
+clear
 
 echo " "
 echo " "
@@ -67,22 +87,39 @@ echo "Iniciando a instalação de aplicativos do repositório. Aguarde..."
 sleep 5
 
 sudo apt install xinit
+clear
 sudo apt install slim
+clear
 sudo apt install openbox
+clear
 sudo apt install obconf
+clear
 sudo apt install lxappearance
+clear
 sudo apt install wicd
+clear
 sudo apt install wicd-curses
+clear
 sudo apt install pulseaudio
+clear
 sudo apt install pavucontrol
+clear
 sudo apt install pcmanfm
+clear
 sudo apt install conky
+clear
 sudo apt install xarchiver
+clear
 sudo apt install leafpad
+clear
 sudo apt install feh
+clear
 sudo apt install chromium-browser
+clear
 sudo apt install firefox
+clear
 sudo apt install lxterminal
+clear
 
 echo " "
 echo " "
@@ -104,6 +141,8 @@ case "$gedit" in
     ;;
 esac
 
+clear
+
 echo " "
 echo " "
 echo "Deseja instalar o reprodutor de mídia vlc?"
@@ -124,6 +163,8 @@ case "$vlc" in
     ;;
 esac
 
+clear
+
 echo " "
 echo " "
 echo "Deseja desinstalar o driver de video nouveau?"
@@ -143,6 +184,7 @@ case "$nouveau" in
     ;;
 esac
 
+clear
 #sudo apt remove uxterm xterm
 
 echo " "
@@ -157,28 +199,7 @@ echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read periferic
             echo "Após a inicialização gráfica, instale os drivers mais recentes de acordo com o seu modelo.
             sleep 5
             clear
-            echo " "
-            echo " "
-            echo "Deseja instalar o programa xsane scanner?"
-            echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read xsane
-                case "$xsane" in
-                    s|S|y|Y|"")
-                    sudo apt search xsane
-                    sudo apt search libsane-extras
-                    sudo apt search sane-utils
-                    clear
-                    sudo apt install sane-utils libsane-extras xsane
-                    sudo adduser $USER scanner
-                ;;
-                    n|N)
-                    echo "Continuemos o procedimento de instalação de outros pacotes."
-                    sleep 5
-                    clear
-                ;;
-                    *)
-                    echo "Opção inválida"
-                ;;
-                esac      
+                
     ;;
     n|N)
             echo "Continuemos o procedimento de instalação de outros pacotes."
@@ -188,7 +209,32 @@ echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read periferic
     *)
             echo "Opção inválida"
     ;;
+esac
 
+clear
+
+echo " "
+echo " "
+echo "Deseja instalar o programa xsane scanner?"
+echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read xsane
+case "$xsane" in
+    s|S|y|Y|"")
+            sudo apt search xsane
+            sudo apt search libsane-extras
+            sudo apt search sane-utils
+            clear
+            sudo apt install sane-utils libsane-extras xsane
+            sudo adduser $USER scanner
+    ;;
+       n|N)
+            echo "Continuemos o procedimento de instalação de outros pacotes."
+            sleep 5
+            clear
+    ;;
+        *)
+            echo "Opção inválida"
+    ;;
+esac 
 
 sudo apt-get install -f
 sudo apt-get autoremove
