@@ -196,7 +196,7 @@ case "$periferic" in
  s|S|y|Y|"")
  sudo apt install lsb
  echo "O suporte para instalação de impressoras e scanners foi instalado."
- echo "Após a inicialização gráfica, instale os drivers mais recentes de acordo com o seu modelo.
+ echo "Após a inicialização gráfica, instale os drivers mais recentes de acordo com o seu modelo."
  sleep 5
  clear
  ;;
@@ -213,7 +213,7 @@ esac
 echo " "
 echo " "
 echo "Deseja instalar programa xsane scanner?"
-echo -n "Digite \(S\)im ou \(N\)ão. Tecle Enter para confirmar: " ; read scanner
+echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read scanner
 
 case "$scanner" in
  s|S|y|Y|"")
@@ -225,12 +225,12 @@ case "$scanner" in
  sudo adduser $USER scanner
  ;;
  n|N)
- echo \"Continuemos o procedimento de instalação de outros pacotes.\"
+ echo "Continuemos o procedimento de instalação de outros pacotes."
  sleep 5
  clear
  ;;
  *)
- echo \"Opção inválida\"
+ echo "Opção inválida"
  ;;
 esac
 
@@ -238,4 +238,3 @@ sudo apt-get install -f
 sudo apt-get autoremove
 sudo apt-get clean
 sudo apt-get autoclean
-exit
