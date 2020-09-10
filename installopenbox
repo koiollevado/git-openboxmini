@@ -73,11 +73,7 @@ sudo apt search pavucontrol
 sudo apt search pcmanfm
 sudo apt search conky
 sudo apt search xarchiver
-sudo apt search leafpad
 sudo apt search feh
-sudo apt search chromium-browser
-sudo apt search firefox
-sudo apt search lxterminal
 
 clear
 
@@ -110,26 +106,73 @@ sudo apt install conky
 clear
 sudo apt install xarchiver
 clear
-sudo apt install leafpad
-clear
 sudo apt install feh
 clear
-sudo apt install chromium-browser
-clear
-sudo apt install firefox
-clear
-sudo apt install lxterminal
-clear
 
 echo " "
 echo " "
-echo "Deseja instalar o editor de texto gedit?"
-echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read gedit
+echo "Qual navegador de internet deseja instalar?"
+echo -n "Digite (0)Chromium (1)Firefox-repositório (2)Firefox-última-versão (3)Google Chrome 64 bits. Tecle Enter para confirmar: " ; read browser
 
-case "$gedit" in
- s|S|y|Y|"")
+case "$browser" in
+ 0|"")
+ sudo apt search chromium-browser
+ sudo apt-get -y install chromium-browser
+ clear
+ ;; 
+ 1)
+ sudo apt search firefox
+ sudo apt-get -y install firefox
+ clear
+ ;;
+ 2)
+ if [ $(uname -m) == "x86_64" ]; then 
+ wget "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=pt-BR" -O firefox.tar.bz2; else 
+ wget "https://download.mozilla.org/?product=firefox-latest&os=linux&lang=pt-BR" -O firefox.tar.bz2; fi
+ sudo tar -jxvf firefox.tar.bz2 -C /opt/
+ sudo mv /opt/firefox*/ /opt/firefox
+ sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
+ rm firefox.tar.bz2
+ clear
+ ;;
+ 3)
+ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+ sudo dpkg -i google-chrome-stable_current_amd64.deb
+ sudo apt-get install -f
+ rm google-chrome*.deb
+ clear
+ ;;
+ n|N)
+ echo "Continuemos o procedimento de instalação de outros pacotes."
+ sleep 5
+ clear
+ ;;
+ *)
+ echo "Opção inválida"
+ ;;
+esac
+
+
+echo " "
+echo " "
+echo "Deseja instalar o editor de texto?"
+echo -n "Digite (0) leafpad (1) geany (2) gedit. Tecle Enter para confirmar: " ; read edit
+
+case "$edit" in
+ 0|"")
+ sudo apt search leafpad
+ sudo apt-get install leafpad
+ clear
+ ;; 
+ 1)
+ sudo apt search geany
+ sudo apt-get install geany
+ clear
+ ;;
+ 2)
  sudo apt search gedit
  sudo apt-get install gedit --no-install-recommends --no-install-suggests
+ clear
  ;;
  n|N)
  echo "Continuemos o procedimento de instalação de outros pacotes."
@@ -186,6 +229,27 @@ esac
 
 clear
 #sudo apt remove uxterm xterm
+
+echo " "
+echo " "
+echo "Deseja instalar o lxterminal?"
+echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; lxterm vlc
+
+case "$lxterm" in
+ s|S|y|Y|"")
+ sudo apt search lxterminal
+ sudo apt install lxterminal
+ clear
+ ;;
+ n|N)
+ echo "Continuemos o procedimento de instalação de outros pacotes."
+ sleep 5
+ clear
+ ;;
+ *)
+ echo "Opção inválida"
+ ;;
+esac
 
 echo " "
 echo " "
