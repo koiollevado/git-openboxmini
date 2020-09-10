@@ -230,7 +230,7 @@ case "$scanner" in
  clear
  ;;
  *)
- echo "Opção inválida"
+ echo \"Opção inválida\"
  ;;
 esac
 
