@@ -233,7 +233,7 @@ clear
 echo " "
 echo " "
 echo "Deseja instalar o lxterminal?"
-echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; lxterm vlc
+echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read lxterm
 
 case "$lxterm" in
  s|S|y|Y|"")
