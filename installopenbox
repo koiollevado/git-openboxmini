@@ -213,15 +213,15 @@ esac
 echo " "
 echo " "
 echo "Deseja instalar programa xsane scanner?"
-echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read scanner
+echo -n "Digite \(S\)im ou \(N\)ão. Tecle Enter para confirmar: " ; read scanner
 
 case "$scanner" in
  s|S|y|Y|"")
- sudo apt search xsane ;
- sudo apt search libsane-extras ;
- sudo apt search sane-utils ;
+ sudo apt search xsane
+ sudo apt search libsane-extras
+ sudo apt search sane-utils
  clear
- sudo apt install sane-utils libsane-extras xsane ;
+ sudo apt install sane-utils libsane-extras xsane
  sudo adduser $USER scanner
  ;;
  n|N)
