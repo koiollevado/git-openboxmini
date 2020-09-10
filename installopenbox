@@ -225,7 +225,7 @@ case "$scanner" in
  sudo adduser $USER scanner
  ;;
  n|N)
- echo "Continuemos o procedimento de instalação de outros pacotes."
+ echo \"Continuemos o procedimento de instalação de outros pacotes.\"
  sleep 5
  clear
  ;;
@@ -238,3 +238,4 @@ sudo apt-get install -f
 sudo apt-get autoremove
 sudo apt-get clean
 sudo apt-get autoclean
+exit
