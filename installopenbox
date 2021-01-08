@@ -36,7 +36,7 @@ echo -n "Digite (S)im ou (N)ão. Tecle Enter para confirmar: " ; read resposta
 
 case "$resposta" in
  s|S|y|Y|"")
- lspc1 | grep vga
+ lspci | grep vga
  echo "Insira o nome do drive vga listado: " ; read driver
  sudo apt search $driver
  echo "Insira o nome do pacote a ser instalado: " ; read pacote
