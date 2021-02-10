@@ -37,7 +37,7 @@
             </item>
             <item label="Editar autostart">
                 <action name="Execute">
-                    <execute>leafpad ~/.config/openbox/autostart.sh</execute>
+                    <execute>leafpad ~/.config/openbox/autostart</execute>
                 </action>
             </item>
             <item label="Editar menu.xml">
