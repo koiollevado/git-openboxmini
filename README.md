@@ -4,7 +4,9 @@
 Opções de sistemas para a base mínima: 
 
 **1. debian netinst unofficial non-free** - https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/ 
+
 **2. debian netinstall** - https://cdimage.debian.org/cdimage/release/current/
+
 **3. ubuntu-minimal** - http://cdimages.ubuntu.com/netboot/
 
 Recomenda-se utilizá-lo após instalação do debian ou do ubuntu-minimal para agilizar a configuração do Openbox.
