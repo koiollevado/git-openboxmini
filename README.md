@@ -18,4 +18,4 @@ chmod +x ubuntu-*.sh
 ou 
 chmod +x debian-*.sh
  
-Daí, basta seguir os scripts para a instalação.
+Daí, basta seguir a ordem dos scripts para a instalação.
