@@ -5,9 +5,7 @@ Opções de sistemas para a base mínima:
 
 **1. debian netinst unofficial non-free** - https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/ 
 
-**2. debian netinstall** - https://cdimage.debian.org/cdimage/release/current/
-
-**3. ubuntu-minimal** - http://cdimages.ubuntu.com/netboot/
+**2. ubuntu-minimal** - http://cdimages.ubuntu.com/netboot/
 
 Recomenda-se utilizá-lo após instalação do debian ou do ubuntu-minimal para agilizar a configuração do Openbox.
 Recomenda-se também, saber a configuração do computador e os periféricos a ser instalados.
@@ -20,7 +18,7 @@ Após a instalação do sistema base com o debian ou ubuntu-minimal, abra o term
 
 **git clone https://github.com/koiollevado/git-openboxmini**
 
-logo após baixá-los, você pode remover os scripts que não vai utilizar e dar permissão de execução aos que utilizará.
+Logo após baixá-los, você pode remover os scripts que não vai utilizar e dar permissão de execução aos que utilizará.
 
 **chmod +x ubuntu-\*.sh** ou **chmod +x debian-\*.sh**
  
