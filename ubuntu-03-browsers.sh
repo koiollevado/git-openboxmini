@@ -10,14 +10,20 @@ case "$browser" in
  0|"")
  sudo apt install chromium-browser -y
  clear
+ chromium-browser https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb?hl=pt-BR &
+ chromium-browser https://chrome.google.com/webstore/detail/downthemall/nljkibfhlpcnanjgbnlnbjecgicbjkge &
  ;; 
  1)
  sudo apt install firefox -y
  clear
+ firefox https://addons.mozilla.org/pt-BR/firefox/addon/adblock-plus/ &
+ firefox https://addons.mozilla.org/pt-BR/firefox/addon/downthemall/ &
  ;;
  2)
  sudo apt install firefox-esr -y
  clear
+ firefox-esr https://addons.mozilla.org/pt-BR/firefox/addon/adblock-plus/ &
+ firefox-esr https://addons.mozilla.org/pt-BR/firefox/addon/downthemall/ &
  ;;
  3)
  if [ $(uname -m) == "x86_64" ]; then 
@@ -28,6 +34,8 @@ case "$browser" in
  sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
  rm firefox.tar.bz2
  clear
+ firefox https://addons.mozilla.org/pt-BR/firefox/addon/adblock-plus/ &
+ firefox https://addons.mozilla.org/pt-BR/firefox/addon/downthemall/ &
  ;;
  4)
  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -35,6 +43,8 @@ case "$browser" in
  sudo apt-get install -f
  rm google-chrome*.deb
  clear
+ chromium-browser https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb?hl=pt-BR &
+ chromium-browser https://chrome.google.com/webstore/detail/downthemall/nljkibfhlpcnanjgbnlnbjecgicbjkge &
  ;;
  n|N)
  echo "O procedimento de instalação foi concluído."
