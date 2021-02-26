@@ -43,8 +43,8 @@ case "$browser" in
  sudo apt-get install -f
  rm google-chrome*.deb
  clear
- chromium-browser https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb?hl=pt-BR &
- chromium-browser https://chrome.google.com/webstore/detail/downthemall/nljkibfhlpcnanjgbnlnbjecgicbjkge &
+ google-chrome https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb?hl=pt-BR &
+ google-chrome https://chrome.google.com/webstore/detail/downthemall/nljkibfhlpcnanjgbnlnbjecgicbjkge &
  ;;
  n|N)
  echo "O procedimento de instalação foi concluído."
