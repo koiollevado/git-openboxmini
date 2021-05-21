@@ -3,7 +3,6 @@
 
 # instalando pacotes
 
-#sudo apt install xinit -y
 sudo apt install --no-install-recommends xserver-xorg xserver-xorg-core xfonts-base xinit -y
 clear
 sudo apt install slim -y
