@@ -39,6 +39,8 @@ sudo apt install lzma-dev -y
 clear
 sudo apt install xarchiver -y
 clear
+sudo apt install gnome-screenshot -y
+clear
 sudo apt install feh -y
 clear
 sudo apt install vlc --no-install-recommends --no-install-suggests -y
