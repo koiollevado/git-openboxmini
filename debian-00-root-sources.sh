@@ -1,7 +1,10 @@
 
 #!/bin/bash
 
+clear
+echo " "
 echo "Insira uma senha para o ROOT"
+echo " "
 sudo passwd root
 
 clear
@@ -11,10 +14,11 @@ sudo mv debian-sources.list /etc/apt/sources.list
 
 clear
 
+echo " "
 echo "Atualizando a lista do repositório"
 sudo apt update
 sudo apt upgrade
 
-sudo apt-get install -f
+sudo apt install -f
 
 clear
