@@ -10,7 +10,7 @@ sudo passwd root
 clear
 
 sudo mv /etc/apt/sources.list /etc/apt/sources.list-backup
-sudo mv debian-sources.list /etc/apt/sources.list
+sudo mv debian-10-sources.list /etc/apt/sources.list
 
 clear
 
@@ -22,3 +22,5 @@ sudo apt upgrade
 sudo apt install -f
 
 clear
+
+sudo apt search xserver-xorg-video-
