@@ -46,7 +46,7 @@ case "$resposta" in
     ;;
     c|C)
 	echo "Edite o arquivo /etc/slim.conf como usuário root."
-	echo 'Digite o comando "leafpad /etc/slim.conf"'
+	echo 'Digite o comando "sudo geany /etc/slim.conf"'
 	echo "Adicione ao final do arquivo as seguintes linhas"
 	echo " "
 	echo " "
