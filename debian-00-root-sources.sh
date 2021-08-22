@@ -10,7 +10,10 @@ sudo passwd root
 clear
 
 sudo mv /etc/apt/sources.list /etc/apt/sources.list-backup
-sudo mv debian-10-sources.list /etc/apt/sources.list
+
+if [ $(lsb_release -sd) == "Debian GNU/Linux 11 (bullseye)"]; then
+sudo mv debian-11-sources.list /etc/apt/sources.list; else
+sudo mv debian-10-sources.list /etc/apt/sources.list; fi
 
 clear
 
