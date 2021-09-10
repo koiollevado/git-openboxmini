@@ -37,7 +37,7 @@ echo " "
 echo "Configurando o login automático de usuário."
 echo " "
 echo "Deseja configurar o login automático de usuário?"
-echo -n "Digite uma letra (C)onfigura o usuário. (S)air"; read resposta
+echo -n "Digite uma letra (C)onfigura o usuário. (S)air " ; read resposta
 case "$resposta" in
     S|s|"")
         echo "Saindo da configuração..."
