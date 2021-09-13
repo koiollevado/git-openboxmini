@@ -51,6 +51,8 @@ sudo apt install lxterminal -y
 clear
 sudo apt install plank -y
 clear
+sudo apt install autofs -y
+clear
 
 # configuracoes de execucao do sistema
 
