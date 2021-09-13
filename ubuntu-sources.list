@@ -26,7 +26,6 @@ deb http://br.archive.ubuntu.com/ubuntu/ bionic multiverse
 deb http://br.archive.ubuntu.com/ubuntu/ bionic universe
 deb http://br.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
 
-## Repositório Old-Release
 deb http://old-releases.ubuntu.com/ubuntu/ bionic main restricted universe multiverse
 deb http://old-releases.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse
 deb http://old-releases.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse
