@@ -60,3 +60,25 @@ case "$resposta" in
         echo "Opção inválida"
     ;;
 esac
+
+# configurando o drive CDROM-DVD
+clear
+echo " "
+echo "Deseja fazer o reconhecimento de unidades de CDROM - DVDROM."
+echo " "
+echo -n "Digite uma letra (I)nstalar AutoFS. (S)air " ; read resposta
+case "$resposta" in
+    S|s|"")
+        echo "Saindo da configuração..."
+	sleep 5
+	exit
+    ;;
+    i|I)
+	echo "Instalando o programa AutoFS... Aguarde..."
+	sudo apt install autofs
+	sudo apt -f install
+    ;;
+    *)
+        echo "Opção inválida"
+    ;;
+esac
