@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
- WALLPAPERS="/home/golimaru/Imagens/wallpapers/"
+ WALLPAPERS="/home/$USER/Imagens/wallpapers/"
  
  desktop_bg=$(find "$WALLPAPERS" -type f | shuf | head -n 1) &&
  exec feh --bg-fill "$desktop_bg"
