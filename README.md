@@ -12,7 +12,7 @@ Recomenda-se também, saber a configuração do computador e os periféricos a s
 
 # Utilizando os scripts
 
-Após a instalação do sistema base com o debian ou ubuntu-minimal, abra o terminal e proceda:
+Após a instalação do sistema base com o debian netinst ou ubuntu-minimal, abra o terminal e proceda:
 
 **sudo apt install git**
 
