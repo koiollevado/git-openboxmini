@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-# instalando pacotes
+# instalando pacotes de programas
 
 clear
 sudo apt install pcmanfm -y
