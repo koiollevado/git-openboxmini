@@ -1,12 +1,10 @@
-
+﻿
 #!/bin/bash
 
-# instalando pacotes de programas
+# instalando pacotes
 
 clear
 sudo apt install pcmanfm -y
-clear
-sudo apt install lxappearance -y
 clear
 sudo apt install wicd -y
 clear

@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 clear
 echo " "
@@ -14,7 +14,7 @@ sudo mv debian-10-sources.list /etc/apt/sources.list
 clear
 
 echo " "
-echo "Atualizando a lista do reposit�rio"
+echo "Atualizando a lista do repositório"
 echo " "
 sudo apt update
 sudo apt upgrade
