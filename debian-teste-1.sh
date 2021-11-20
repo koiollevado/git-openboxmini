@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-# instalando pacotes
+# instalando os pacotes do openbox
 
 clear
 sudo apt install openbox -y
