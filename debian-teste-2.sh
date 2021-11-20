@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-# instalando pacotes
+# instalando pacotes do ambiente gráfico e login
 
 clear
 sudo apt install xinit -y
