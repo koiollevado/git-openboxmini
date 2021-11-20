@@ -6,6 +6,8 @@
 clear
 sudo apt install pcmanfm -y
 clear
+sudo apt install lxappearance -y
+clear
 sudo apt install wicd -y
 clear
 sudo apt install wicd-curses -y
@@ -46,7 +48,7 @@ chmod +x ~/.xinitrc
 # configurando o conkyrc
 mv conkyrc ~/.conkyrc
 
-# configurando o tráfego da conexão de rede no conky
+# configurando o trÃ¡fego da conexÃ£o de rede no conky
 ip addr show | grep BROADCAST | awk 'BEGIN { FS=":"; OFS=":"; } {print $2}' | sed "s/\ //g" > partner.sh
 
 sed -i 's/^/sed -i "s\/wlp1s10\//g' partner.sh
