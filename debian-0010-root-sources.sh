@@ -15,6 +15,7 @@ clear
 
 echo " "
 echo "Atualizando a lista do repositório"
+echo " "
 sudo apt update
 sudo apt upgrade
 
