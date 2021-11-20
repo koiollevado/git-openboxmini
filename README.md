@@ -7,7 +7,7 @@ Opções de sistemas para a base mínima:
 
 **2. ubuntu-minimal** - http://cdimages.ubuntu.com/netboot/
 
-Recomenda-se utilizá-lo após instalação do debian ou do ubuntu-minimal para agilizar a configuração do Openbox.
+Recomenda-se utilizá-lo após instalação do debian netinst ou do ubuntu-minimal para agilizar a configuração do Openbox.
 Recomenda-se também, saber a configuração do computador e os periféricos a ser instalados.
 
 # Utilizando os scripts
