@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-echo " "
+clear
 echo " "
 echo "Qual navegador de internet deseja instalar?"
 echo -n "Digite (0)Chromium (1)Firefox-repositório (2)Firefox ESR (3)Firefox-última-versão (4)Google Chrome 64 bits. Tecle Enter para confirmar: " ; read browser
@@ -20,7 +20,7 @@ case "$browser" in
  firefox https://addons.mozilla.org/pt-BR/firefox/addon/downthemall/ &
  ;;
  2)
- sudo apt install firefox-esr -y
+ sudo apt install firefox-esr-l10n-pt-br -y
  clear
  firefox-esr https://addons.mozilla.org/pt-BR/firefox/addon/adblock-plus/ &
  firefox-esr https://addons.mozilla.org/pt-BR/firefox/addon/downthemall/ &
