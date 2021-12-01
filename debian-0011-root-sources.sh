@@ -1,26 +1,19 @@
-
 #!/bin/bash
 
 clear
 echo " "
-echo "Insira uma senha para o ROOT"
+echo "Insira uma senha para o root"
 echo " "
 sudo passwd root
-
 clear
-
 sudo mv /etc/apt/sources.list /etc/apt/sources.list-backup
-sudo mv debian-11-sources.list /etc/apt/sources.list
-
+sudo mv debian-11-sources.list /etc/apt/souces.list
 clear
-
 echo " "
 echo "Atualizando a lista do repositório"
+echo " "
 sudo apt update
 sudo apt upgrade
-
-sudo apt install -f
-
-clear
-
-sudo apt search xserver-xorg-video-
+sudo apt install openbox obmenu obconf lxappearance lxterminal geany
+sudo apt -f install
+sudo reboot
