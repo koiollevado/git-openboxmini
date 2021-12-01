@@ -2,7 +2,22 @@
 
 #instalando pacotes
 clear
-sudo apt install pcmanfm wicd widc-curses pulseaudio pavucontrol conky p7zip p7zip-full p7zip-rar lzma lzma-dev xarchiver gnome-screenshot feh vlc --no-install-recommends --no-install-suggests plank
+sudo apt install pcmanfm \
+wicd \
+widc-curses \
+pulseaudio \
+pavucontrol \
+conky \
+p7zip \
+p7zip-full \
+p7zip-rar \
+lzma \
+lzma-dev \
+xarchiver \
+gnome-screenshot \
+feh \
+vlc --no-install-recommends --no-install-suggests \
+plank
 
 #configurações de execução do sistema
 
