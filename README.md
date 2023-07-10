@@ -4,6 +4,7 @@
 Opções de sistemas para a base mínima: 
 
 **1. debian netinst unofficial non-free** - https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/ 
+**1.1. Imagem do CD netinst** - https://www.debian.org/CD/netinst/
 
 **2. ubuntu-minimal** - http://cdimages.ubuntu.com/netboot/
 
