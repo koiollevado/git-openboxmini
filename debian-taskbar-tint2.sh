@@ -6,6 +6,7 @@ sudo apt install gsimplecal -y
 sudo apt install pnmixer -y
 sudo apt install obsession -y
 clear
+mkdir /home/$USER/.config/tint2
 cp tint2rc /home/$USER/.config/tint2
 
 echo " "
@@ -14,8 +15,9 @@ echo " "
 echo "plank &"
 echo "tint2 &"
 echo "pnmixer &"
-echo "conky -c /home/fassisfilho/.conkyrc &"
-echo "/home/fassisfilho/.wallpapers"
+echo "conky -c /home/$USER/.conkyrc &"
+echo "/home/$USER/.wallpapers"
+sudo geany ~/.config/openbox/autostart
 
 sudo apt -f install
 sudo reboot
