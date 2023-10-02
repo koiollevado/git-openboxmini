@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Firefox
+Comment=Navegue pela Web
+GenericName=Navegador Web
+Exec=/opt/firefox/firefox %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/opt/firefox/browser/chrome/icons/default/default48.png
+Categories=Application;Network;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vn
+d.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;i
+mage/png
+StartupWMClass=Firefox-bin
+StartupNotify=true
