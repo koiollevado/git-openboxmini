@@ -15,6 +15,7 @@ case "$browser" in
  ;; 
  1)
  sudo apt install firefox -y
+ sudo cp firefox.desktop /usr/share/applications
  clear
  firefox https://addons.mozilla.org/pt-BR/firefox/addon/adblock-plus/ &
  firefox https://addons.mozilla.org/pt-BR/firefox/addon/downthemall/ &
@@ -33,6 +34,7 @@ case "$browser" in
  sudo mv /opt/firefox*/ /opt/firefox
  sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
  rm firefox.tar.bz2
+ sudo cp firefox.desktop /usr/share/applications
  clear
  firefox https://addons.mozilla.org/pt-BR/firefox/addon/adblock-plus/ &
  firefox https://addons.mozilla.org/pt-BR/firefox/addon/downthemall/ &
