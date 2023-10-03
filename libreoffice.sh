@@ -6,11 +6,9 @@ echo "Atualizando o repositório... Aguarde..."
 echo " "
 sudo apt update
 echo " "
-echo "Atualizando a distro... Aguarde..."
+echo "Removendo arquivos obsoletos... Aguarde..."
 echo " "
 sudo apt install -f
-echo " "
-echo "Removendo arquivos obsoletos... Aguarde..."
 echo " "
 clear
 echo " "
