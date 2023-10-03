@@ -1,16 +1,23 @@
 [Desktop Entry]
-Encoding=UTF-8
+Version=1.0
 Name=Firefox
-Comment=Navegue pela Web
-GenericName=Navegador Web
+GenericName=Web Browser
+GenericName[pt_BR]=Navegador da Internet
+Comment=Access the Internet
+Comment[pt_BR]=Acessar a internet
 Exec=/opt/firefox/firefox %u
-Terminal=false
-X-MultipleArgs=false
-Type=Application
-Icon=/opt/firefox/browser/chrome/icons/default/default48.png
-Categories=Application;Network;
-MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vn
-d.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;i
-mage/png
-StartupWMClass=Firefox-bin
 StartupNotify=true
+Terminal=false
+Icon=/opt/firefox/browser/chrome/icons/default/default48.png
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
+Actions=new-window;new-private-window;
+[Desktop Action new-window]
+Name=New Window
+Name[pt_BR]=Nova janela
+Exec=/opt/firefox/firefox
+[Desktop Action new-private-window]
+Name=New Incognito Window
+Name[pt_BR]=Nova janela anônima
+Exec=/opt/firefox/firefox --incognito
