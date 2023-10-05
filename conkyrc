@@ -70,7 +70,7 @@ ${color grey}Swap Usada:$color $swap/$swapmax - $swapperc% ${swapbar 4}
 ${color grey}CPU Usado:$color $cpu% ${cpubar 4}
 ${color grey}Processos:$color $processes ${color grey}Running:$color $running_processes
 $hr
-${color grey}Uso do disco:$color${fs_used /home/golimaru/}/${fs_size /} ${fs_bar 6 /}
+${color grey}Uso do disco:$color${fs_used /home/golimaru/}/${fs_size /home/golimaru/} ${fs_bar 6 /}
 ${color green}Tráfego de rede:
 Up:$color ${upspeed wlp1s10} ${color green} - Down:$color ${downspeed wlp1s10}
 $hr
