@@ -39,7 +39,7 @@ clear
 
 #configurando o xinitrc
 mv xinitrc ~/.xinitrc
-chmod +x .xinitrc
+chmod +x ~/.xinitrc
 
 #configurando o conkyrc
 mv conkyrc ~/.conkyrc
@@ -67,7 +67,7 @@ mv menu.xml ~/.config/openbox/
 mv rc.xml ~/.config/openbox
 
 #remove o terminal uxterm xterm
-sudo apt remove xterm
+#sudo apt remove xterm
 
 #configurando o editor de texto no menu openbox
 sed -i "s/leafpad/geany/g" ~/.config/openbox/menu.xml
