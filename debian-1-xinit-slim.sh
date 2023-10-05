@@ -7,5 +7,6 @@ echo " "
 sudo apt install xinit -y
 clear
 sudo apt install slim -y
+sudo dpkg-reconfigure slim
 clear
 sudo reboot
