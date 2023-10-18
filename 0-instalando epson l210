@@ -1,0 +1,39 @@
+
+Use os seguintes comandos para instalar a impressora.
+
+sudo apt update
+
+sudo apt install cups system-config-printer
+
+sudo apt -f install
+
+sudo reboot
+
+
+Após reiniciar, use os comandos abaixo:
+
+sudo apt update
+
+sudo apt -f install
+
+sudo apt install lsb
+
+sudo apt install lsb-base lsb-release
+
+sudo dpkg -i epson-inkjet-printer-201207w_1.0.0-1lsb3.2_amd64.deb
+
+sudo dpkg -i epson-printer-utility_1.0.2-1lsb3.2_amd64.deb
+
+./iscan-bundle-2.30.4.x64.deb/install.sh
+
+sudo apt -f install
+
+
+Após realizar os comandos, abra o terminal:
+
+sudo su
+
+system-config-printer
+
+Aguarde o utilitário ser carregado e configure a impressora. 
+Feito isso a impressora já estará instalada e configurada.
