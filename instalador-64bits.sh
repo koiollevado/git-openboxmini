@@ -14,6 +14,6 @@ sudo dpkg -i epson-inkjet-printer-201207w_1.0.0-1lsb3.2_amd64.deb
 
 sudo dpkg -i epson-printer-utility_1.0.2-1lsb3.2_amd64.deb
 
-./iscan-bundle-2.30.4.x64/install.sh
+./iscan-bundle-2.30.4.x64.deb/install.sh
 
 sudo apt -f install
