@@ -9,6 +9,8 @@ sudo apt install xdotool -y
 clear
 mkdir /home/$USER/.config/tint2
 cp tint2rc /home/$USER/.config/tint2
+clear
+sudo cp *.png /usr/share/pixmaps
 
 echo " "
 echo "Altere o arquivo autostart em ~/.config/openbox"
