@@ -8,9 +8,10 @@ sudo apt install obsession -y
 sudo apt install xdotool -y
 clear
 mkdir /home/$USER/.config/tint2
-cp tint2rc /home/$USER/.config/tint2
+cp tint2rc /home/$USER/.config/tint2/
 clear
-sudo cp *.png /usr/share/pixmaps
+sudo cp *.png /usr/share/pixmaps/
+sudo cp tint2-button.desktop /usr/share/applications/
 clear
 
 echo " "
