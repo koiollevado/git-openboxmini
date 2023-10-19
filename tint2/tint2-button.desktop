@@ -6,6 +6,6 @@ Exec=xdotool key Menu
 Terminal=false
 X-MultipleArgs=false
 Type=Application
-Icon=debian-logo.png
+Icon=debian-logo-1.png
 Categories=Menu;
 StartupNotify=true
