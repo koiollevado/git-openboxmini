@@ -17,6 +17,8 @@ unzip Win10.zip
 mkdir -p ~/.local/share/themes
 mv Win8/ ~/.local/share/themes
 mv Win10/ ~/.local/share/themes
+unzip lacapitaine.zip
+mv la-capitaine-icon-theme-master ~/.local/share/themes
 
 # configuracoes manuais
 clear
