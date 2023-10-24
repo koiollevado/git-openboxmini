@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 # descompactando para o seu usuario
 unzip lacapitaine.zip -d .icons/
