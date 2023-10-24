@@ -1,0 +1,7 @@
+
+
+# descompactando para o seu usuario
+unzip lacapitaine.zip -d .icons/
+
+# descompactando para todos os usuarios
+# sudo lacapitaine.zip master.zip -d /usr/share/icons/
