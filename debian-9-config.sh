@@ -3,7 +3,7 @@
 
 # configurando o papel de parede aleatorio do desktop
 mv wallpapers ~/.wallpapers
-mkdir ~/Imagens/wallpapers
+mkdir -p ~/Imagens/wallpapers
 chmod +x ~/.wallpapers
 echo "/home/$USER/.wallpapers" >> ~/.config/openbox/autostart
 
