@@ -66,8 +66,9 @@ echo "conky -c /home/$USER/.conkyrc &" >> ~/.config/openbox/autostart
 mv menu.xml ~/.config/openbox/
 mv rc.xml ~/.config/openbox
 
-#remove o terminal uxterm xterm
-#sudo apt remove xterm
+#remove o terminal uxterm xterm (caso não instale o tex live)
+#sudo apt purge xterm
+#sudo apt purge uxterm
 
 #configurando o editor de texto no menu openbox
 sed -i "s/leafpad/geany/g" ~/.config/openbox/menu.xml
