@@ -45,11 +45,15 @@ chmod +x ~/.xinitrc
 mv conkyrc ~/.conkyrc
 
 #configurando o tráfego do conexão de rede no conky
-ip addr show | grep BROADCAST | awk 'BEGIN { FS=":"; OFS=":"; } {print $2}' > partner.sh
-
+echo "linha1" > partner.sh 
+ip addr show | grep BROADCAST | awk 'BEGIN { FS=":"; OFS=":"; } {print $2}' >> partner.sh
 sed -i 's/^ /sed -i "s\/wlp1s10\//g' partner.sh
 sed -i 's/$/\/g"\ \~\/.conkyrc/' partner.sh
-sed -i "1s/^/#\!\/bin/bash\/n" partner.sh
+sed -i '1s|^.*$|#!/bin/bash|' partner.sh
+usuario=$USER
+echo $usuario >> partner.sh
+sed -i '3s|^|sed -i "s\/golimaru/|' partner.sh
+sed -i '3s|$|/\g"\ \~\/.conkyrc/|' partner.sh
 chmod +x partner.sh
 ./partner.sh
 #rm partner.sh
