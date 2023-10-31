@@ -1,0 +1,7 @@
+Instale o pacote rsync, para isso use o comando abaixo
+
+sudo apt install rsync -y
+
+depois de instalar, use o comando com os parâmetros
+
+rsync -av --ignore-existing "pasta de origem ou arquivo" "local de destino"
