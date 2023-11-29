@@ -23,11 +23,6 @@
                 <execute>lxterminal</execute>
             </action>
         </item>        
-            <item label="Geobebra Clássico 5">
-                <action name="Execute">
-                    <execute>geogebra</execute>
-                </action>
-            </item>
         <separator/>
         <menu id="settings" label="Configurações">
             <item label="Ambiente Openbox">
