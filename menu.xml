@@ -22,7 +22,9 @@
             <action name="Execute">
                 <execute>lxterminal</execute>
             </action>
-        </item>        
+        </item>   
+	<separator/>
+  	<menu id="applications-menu" label="Aplicações" execute="/usr/bin/obamenu"/>
         <separator/>
         <menu id="settings" label="Configurações">
             <item label="Ambiente Openbox">
@@ -49,8 +51,6 @@
                    <execute>openbox --restart</execute>            
 		</item>
         </menu>
-        <separator/>
-  	<menu id="applications-menu" label="Aplicações" execute="/usr/bin/obamenu"/>
   	<separator/>
               <item label="Sair"> <action name="Execute">
                    <execute>openbox --exit</execute>
