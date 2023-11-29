@@ -1,13 +1,22 @@
-UXTerm*faceName:        DejaVu Sans Mono
-UXTerm*faceSize:        10
-UXTerm*renderFont:      true
+! FONTE
+UXTerm*faceName: DejaVu Sans Mono
+UXTerm*faceSize: 12
+UXTerm*renderFont: true
 XTerm*faceName: DejaVu Sans Mono
-XTerm*faceSize: 10
-XTerm*renderFont:       true
-Xcursor.size:   18
-Xcursor.theme:  DMZ-White
-Xcursor.theme_core:     true
+XTerm*faceSize: 12
+XTerm*renderFont: true
+
+! CURSOR
+Xcursor.size: 18
+Xcursor.theme: DMZ-White
+Xcursor.theme_core: true
+
+!COR
 XTerm*background: black
 XTerm*foreground: white
 UXTerm*background: black
 UXTerm*foreground: white
+
+! OPÇÕES 
+XTerm*fastScroll: true
+UXTerm*fastScroll: true
