@@ -1,0 +1,11 @@
+Vc pode instalar fontes para o seu usuário ou para todos os usuários.
+
+Para o seu, crie uma pasta chamada .fonts na sua pasta pessoal e copie as fontes nela.
+
+Para todos, copie as fontes para a pasta /usr/share/fonts. Para isso vc precisa do sudo.
+
+Após a cópia das fontes, feche os programas abertos e rode:
+
+sudo fc-cache -f -v
+
+É o que basta.
