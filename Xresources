@@ -20,3 +20,11 @@ UXTerm*foreground: white
 ! OPÇÕES 
 XTerm*fastScroll: true
 UXTerm*fastScroll: true
+
+!ROLAGEM
+XTerm.vt100.saveLines: 4096
+XTerm.vt100.scrollBar: true
+XTerm.vt100.scrollbar.width: 8
+UXTerm.vt100.saveLines: 4096
+UXTerm.vt100.scrollBar: true
+UXTerm.vt100.scrollbar.width: 8
