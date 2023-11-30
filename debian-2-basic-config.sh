@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #instalando pacotes
+sudo apt install wget -y
 clear
 sudo apt install pcmanfm -y
 clear
