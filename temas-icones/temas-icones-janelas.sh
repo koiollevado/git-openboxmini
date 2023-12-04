@@ -27,7 +27,7 @@ case "$icons" in
  ;;
  4)
  mkdir -p ~/.local/share/themes
- unzip themes.zip -d ~/.local/share/themes
+ unzip themes.zip -d ~/.local/share/
  ;;
  n|N)
  echo "O procedimento de instalação foi concluído."
