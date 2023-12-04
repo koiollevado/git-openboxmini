@@ -3,8 +3,20 @@
 # instala Icons suru 4all e La Captaine e os temas windows 8 e windows 10
 clear
 echo " "
-echo "Opções visuais para o desktop:"
-echo -n "Digite (0)Icones Suru-4All (1)Icones La Capitaine (2)Tema Windows 8 (3)Tema Windows 10 (4)Temas Diversos. Tecle Enter para confirmar: " ; read icons
+echo "Opções visuais para ícones e janelas. Digite uma das opções:"
+echo "------------------------------------------------------------"
+echo "                          ICONES                            "
+echo "------------------------------------------------------------"
+echo "                  0 - Icones Suru-4All                      "
+echo "                  1 - Icones La Capitaine                   "
+echo "------------------------------------------------------------"
+echo "                           TEMAS                            "
+echo "------------------------------------------------------------"
+echo "                    2 - Tema Windows 8                      "
+echo "                    3 - Tema Windows 10                     "
+echo "                    4 - Temas Diversos.                     "
+echo "------------------------------------------------------------"
+echo -n "Tecle Enter para confirmar: " ; read icons
 
 case "$icons" in
  0|"")
@@ -12,22 +24,27 @@ case "$icons" in
  mkdir -p ~/.local/share/icons
  tar -vzxf Suru-4All.tar.gz
  mv Suru\ 4All/ ~/.local/share/icons
+ clear
  ;; 
  1)
  mkdir -p ~/.local/share/icons
  unzip lacapitaine.zip -d ~/.local/share/icons
+ clear
  ;;
  2)
  mkdir -p ~/.local/share/themes
  unzip Win8.zip -d ~/.local/share/themes
+ clear
  ;;
  3)
  mkdir -p ~/.local/share/themes
  unzip Win10.zip -d ~/.local/share/themes
+ clear
  ;;
  4)
  mkdir -p ~/.local/share/themes
  unzip themes.zip -d ~/.local/share/
+ clear
  ;;
  n|N)
  echo "O procedimento de instalação foi concluído."
