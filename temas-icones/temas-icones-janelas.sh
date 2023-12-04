@@ -4,7 +4,7 @@
 clear
 echo " "
 echo "Opções visuais para o desktop:"
-echo -n "Digite (0)Icones Suru-4All (1)Icones La Capitaine (2)Tema Windows 8 (3)Tema Windows 10. Tecle Enter para confirmar: " ; read icons
+echo -n "Digite (0)Icones Suru-4All (1)Icones La Capitaine (2)Tema Windows 8 (3)Tema Windows 10 (4)Temas Diversos. Tecle Enter para confirmar: " ; read icons
 
 case "$icons" in
  0|"")
@@ -24,6 +24,10 @@ case "$icons" in
  3)
  mkdir -p ~/.local/share/themes
  unzip Win10.zip -d ~/.local/share/themes
+ ;;
+ 4)
+ mkdir -p ~/.local/share/themes
+ unzip themes.zip -d ~/.local/share/themes
  ;;
  n|N)
  echo "O procedimento de instalação foi concluído."
