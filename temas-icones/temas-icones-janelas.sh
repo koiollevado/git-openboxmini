@@ -17,7 +17,7 @@ echo "                    3 - Tema Windows 8                      "
 echo "                    4 - Tema Windows 10                     "
 echo "                    5 - Temas Openbox                       "
 echo "------------------------------------------------------------"
-echo -n "Tecle Enter para confirmar: " ; read -r icons
+echo -n "Tecle Enter para confirmar: " ; read icons
 
 case "$icons" in
  0|"")
