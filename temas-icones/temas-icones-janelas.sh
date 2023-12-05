@@ -3,7 +3,7 @@
 # instala Icons suru 4all e La Captaine e os temas windows 8 e windows 10
 clear
 echo " "
-echo "Opções visuais para ícones e janelas. Digite uma das opções:"
+echo "    Temas para ícones e janelas. Digite uma das opções:"
 echo "------------------------------------------------------------"
 echo "                          ICONES                            "
 echo "------------------------------------------------------------"
