@@ -17,7 +17,7 @@ echo "                    3 - Tema Windows 8                      "
 echo "                    4 - Tema Windows 10                     "
 echo "                    5 - Temas Openbox                       "
 echo "------------------------------------------------------------"
-echo -n "Tecle Enter para confirmar: " ; read icons
+echo -n "Tecle Enter para confirmar: " ; read -r icons
 
 case "$icons" in
  0|"")
@@ -32,9 +32,9 @@ case "$icons" in
  unzip lacapitaine.zip -d ~/.local/share/icons
  clear
  ;;
-  2)
+ 2)
  mkdir -p ~/.local/share/themes
- unzip Windows\ 10\ Icon\ Pack\ v0.1.zip -d ~/.local/share/icons
+ unzip Win10IconPackv0.1.zip -d ~/.local/share/icons
  clear
  ;;
  3)
