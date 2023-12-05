@@ -9,12 +9,13 @@ echo "                          ICONES                            "
 echo "------------------------------------------------------------"
 echo "                  0 - Icones Suru-4All                      "
 echo "                  1 - Icones La Capitaine                   "
+echo "                  2 - Icones Windows 10                     "
 echo "------------------------------------------------------------"
 echo "                           TEMAS                            "
 echo "------------------------------------------------------------"
-echo "                    2 - Tema Windows 8                      "
-echo "                    3 - Tema Windows 10                     "
-echo "                    4 - Temas Diversos.                     "
+echo "                    3 - Tema Windows 8                      "
+echo "                    4 - Tema Windows 10                     "
+echo "                    5 - Temas Diversos.                     "
 echo "------------------------------------------------------------"
 echo -n "Tecle Enter para confirmar: " ; read icons
 
@@ -31,17 +32,22 @@ case "$icons" in
  unzip lacapitaine.zip -d ~/.local/share/icons
  clear
  ;;
- 2)
+  2)
  mkdir -p ~/.local/share/themes
- unzip Win8.zip -d ~/.local/share/themes
+ unzip Windows\ 10\ Icon\ Pack\ v0.1.zip -d ~/.local/share/icons
  clear
  ;;
  3)
  mkdir -p ~/.local/share/themes
- unzip Win10.zip -d ~/.local/share/themes
+ unzip Win8.zip -d ~/.local/share/themes
  clear
  ;;
  4)
+ mkdir -p ~/.local/share/themes
+ unzip Win10.zip -d ~/.local/share/themes
+ clear
+ ;;
+ 5)
  mkdir -p ~/.local/share/themes
  unzip themes.zip -d ~/.local/share/
  clear
