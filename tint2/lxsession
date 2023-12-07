@@ -1,0 +1,44 @@
+Para você ter uma barra de tarefas semelhante a do Windows você pode fazer a instalação do pacote lxsession com o seguinte comando:
+
+sudo apt install lxsession -y
+
+*Aviso:* caso você opte por fazer essa instalação ele substituirá algumas configurações que já foram estabelecidas no primeiro momento com os scripts. Além disso ele instalará outros programas dependentes como:
+
+lxclipboard 
+	é um utilitário de área de transferência para LXSession e LXDE.
+
+lxlock
+	bloqueia o display local do X até que uma senha seja digitada.
+
+lxpolkit
+	é um agente polkit.
+
+lxsession
+	é um gerenciador de sessões X leve.
+
+lxsession-db
+	é usado para modificar o banco de dados para gerenciar sessões em lxsession.
+
+lxsession-default
+	iniciar aplicativos padrão definidos pelo LXsession.
+
+lxsession-default-apps
+	é um utilitário para configurar o lxsession e seus aplicativos padrão.
+
+lxsession-default-terminal
+	inicie o terminal padrão definido por LXSession.
+
+lxsession-edit
+	é o gerenciador de edição de sessão padrão usado pelo LXDE.
+
+lxsession-logout
+	é um utilitário para sair do LXSession.
+
+lxsession-xdg-autostart
+	lida com as especificações de inicialização automática do freedesktop.org.
+
+lxsession-xsettings
+	é uma ferramenta para configurar temas gtk+, teclado e mouse para você na inicialização da sessão.
+
+lxsettings-daemon
+	é o daemon de configurações do LXsession.
