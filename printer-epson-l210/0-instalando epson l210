@@ -3,7 +3,10 @@ Use os seguintes comandos para instalar a impressora.
 
 sudo apt update
 
-sudo apt install cups system-config-printer
+sudo apt install cups -y
+sudo apt install printer-driver-escpr -y
+sudo apt install printer-driver-gutenprint -y
+sudo apt install system-config-printer -y
 
 sudo apt -f install
 
