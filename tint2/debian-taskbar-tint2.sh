@@ -1,11 +1,11 @@
 #!/bin/bash
 
 clear
-sudo apt install tint2 -y
-sudo apt install gsimplecal -y
-sudo apt install pnmixer -y
-sudo apt install obsession -y
-sudo apt install xdotool -y
+sudo apt install tint2 \
+                 gsimplecal \
+                 pnmixer \
+                 obsession \
+                 xdotool
 clear
 mkdir /home/$USER/.config/tint2
 cp tint2rc /home/$USER/.config/tint2/
