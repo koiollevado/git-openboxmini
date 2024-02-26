@@ -43,27 +43,40 @@ case "$num" in
     1"")
         echo "A opção 1 foi a escolhida."
 	echo " "
-	sudo apt-get install texlive-latex-base texlive-lang-portuguese
+	sudo apt-get install texlive-latex-base \
+                             texlive-lang-portuguese
     ;;
     2)
         echo "A opção 2 foi a escolhida."
 	echo " "
-	sudo apt-get install texlive-latex-base texlive-latex-recommended texlive-lang-portuguese
+	sudo apt-get install texlive-latex-base \
+                             texlive-latex-recommended \
+			     texlive-lang-portuguese
     ;;
     3)
         echo "A opção 3 foi a escolhida."
 	echo " "
-	sudo apt-get install abntex texlive texlive-latex-base texlive-latex-recommended texlive-lang-portuguese
+	sudo apt-get install abntex \
+                             texlive \
+			     texlive-latex-base \
+	                     texlive-latex-recommended \
+		             texlive-lang-portuguese
     ;;
     4)
         echo "A opção 4 foi a escolhida."
 	echo " "
-	sudo apt-get install abntex texlive texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-lang-portuguese
+	sudo apt-get install abntex \
+                             texlive \
+			     texlive-latex-base \
+	                     texlive-latex-recommended \
+		             texlive-latex-extra \
+	                     texlive-lang-portuguese
     ;;
     5)
         echo "A opção 5 foi a escolhida."
 	echo " "
-	sudo apt-get install abntex texlive-full
+	sudo apt-get install abntex \
+                             texlive-full
     ;;
     s|S)
         echo "Saindo..."
