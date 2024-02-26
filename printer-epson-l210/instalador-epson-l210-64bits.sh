@@ -12,7 +12,7 @@ sudo apt install lsb \
                  printer-driver-gutenprint \
                  system-config-printer 
 
-sudo dpkg -i lsb_4.1-48_amd64.deb
+# sudo dpkg -i lsb_4.1-48_amd64.deb
 sudo dpkg -i epson-inkjet-printer-201207w_1.0.0-1lsb3.2_amd64.deb
 sudo dpkg -i epson-printer-utility_1.1.2-1_amd64.deb
 
