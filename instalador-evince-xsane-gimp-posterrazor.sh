@@ -17,11 +17,13 @@ function menu() {
 # Função para instalar o GIMP
 function instalar_gimp() {
   sudo apt install gimp -y
+  sudo apt -f install
 }
 
 # Função para instalar o Poster Razor
 function instalar_poster_razor() {
   sudo apt install posterrazor -y
+  sudo apt -f install
 }
 
 # Função para instalar o Evince
@@ -32,6 +34,7 @@ function instalar_evince() {
 # Função para instalar o Xsane
 function instalar_xsane() {
   sudo apt install xsane -y
+  sudo apt -f install
 }
 
 # Função para instalar Todos
@@ -40,6 +43,7 @@ function instalar_todos() {
                    gimp \
                    evince \
                    posterrazor
+  sudo apt -f install                   
 }
 
 # Loop principal do script
@@ -58,6 +62,3 @@ while true; do
 done
 
 echo "Obrigado por usar este script!"
-
-
-sudo apt -f install
