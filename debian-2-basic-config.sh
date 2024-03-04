@@ -1,23 +1,23 @@
 #!/bin/bash
 
 #instalando pacotes
-sudo apt install wget \
-                 pcmanfm \
-                 wicd \
-                 widc-curses \
-                 pulseaudio \
-                 pavucontrol \
-                 conky \
-                 p7zip \
-                 p7zip-full \
-                 p7zip-rar \
-                 lzma \
-                 lzma-dev \
-                 xarchiver \
-                 gnome-screenshot \
-                 feh \
-                 vlc --no-install-recommends --no-install-suggests \
-                 plank 
+sudo apt install wget -y
+sudo apt install pcmanfm -y
+sudo apt install wicd -y
+sudo apt install widc-curses -y
+sudo apt install pulseaudio -y
+sudo apt install pavucontrol -y
+sudo apt install conky -y
+sudo apt install p7zip -y
+sudo apt install p7zip-full -y
+sudo apt install p7zip-rar -y
+sudo apt install lzma -y
+sudo apt install lzma-dev -y
+sudo apt install xarchiver -y
+sudo apt install gnome-screenshot -y
+sudo apt install feh -y
+sudo apt install vlc --no-install-recommends --no-install-suggests -y
+sudo apt install plank -y
 clear
 
 #configurações de execução do sistema
