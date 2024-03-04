@@ -39,10 +39,10 @@ function instalar_xsane() {
 
 # Função para instalar Todos
 function instalar_todos() {
-  sudo apt install xsane \
-                   gimp \
-                   evince \
-                   posterrazor
+  sudo apt install xsane -y
+  sudo apt install gimp -y
+  sudo apt install evince -y
+  sudo apt install posterrazor -y
   sudo apt -f install                   
 }
 
