@@ -3,15 +3,19 @@
 # Função para exibir o menu de opções
 function menu() {
   clear
-  echo "Escolha o navedador de internet que deseja instalar:"
-  echo "0. Chromium"
-  echo "1. Firefox - repositório"
-  echo "2. Firefox ESR"
-  echo "3. Firefox - última versão"
-  echo "4. Google Chrome 64 bits"
-  echo "5. Sair"
-  
-  read -p "Digite o número da opção: " opcao
+  echo " "
+  echo "------------------------------------------------------------"                    
+  echo "              Escolha o navedador de internet:"
+  echo "------------------------------------------------------------" 
+  echo "                     0. Chromium"
+  echo "                     1. Firefox - repositório"
+  echo "                     2. Firefox ESR"
+  echo "                     3. Firefox - última versão"
+  echo "                     4. Google Chrome 64 bits"
+  echo "                     5. Sair"
+  echo "------------------------------------------------------------" 
+  echo " "  
+  read -p "              Digite o número da opção: " opcao
 }
 
 # Função para instalar o chromium
