@@ -6,6 +6,7 @@ mv wallpapers ~/.wallpapers
 mkdir -p ~/Imagens/wallpapers
 chmod +x ~/.wallpapers
 echo "/home/$USER/.wallpapers" >> ~/.config/openbox/autostart
+mv wall0*.* /home/$USER/Imagens/wallpapers/
 
 # instala Icons suru 4all e La Captaine e os temas windows 8 e windows 10
 # cat xa* > Suru-4All.tar.gz
