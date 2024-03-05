@@ -3,4 +3,5 @@
  
  desktop_bg=$(find "$WALLPAPERS" -type f | shuf | head -n 1) &&
  exec feh --bg-fill "$desktop_bg"
- 
+
+move wall0*.* /home/$USER/Imagens/wallpapers/
