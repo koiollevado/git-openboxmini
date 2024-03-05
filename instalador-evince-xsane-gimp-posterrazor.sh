@@ -2,16 +2,19 @@
 
 # Função para exibir o menu de opções
 function menu() {
-  clear
-  echo "Escolha o programa que deseja instalar:"
-  echo "1. GIMP"
-  echo "2. Poster Razor"
-  echo "3. Evince"
-  echo "4. Xsane"
-  echo "5. TODOS"
-  echo "6. Sair"
-
-  read -p "Digite o número da opção: " opcao
+  echo " "
+  echo "------------------------------------------------------------"                    
+  echo "           Escolha o programa que deseja instalar:"
+  echo "------------------------------------------------------------" 
+  echo "                       1. Gimp"
+  echo "                       2. Poster Razor"
+  echo "                       3. Evince"
+  echo "                       4. Xsane"
+  echo "                       5. TODOS"
+  echo "                       6. Sair"
+  echo "------------------------------------------------------------" 
+  echo " "  
+  read -p "           Digite o número da opção: " opcao
 }
 
 # Função para instalar o GIMP
