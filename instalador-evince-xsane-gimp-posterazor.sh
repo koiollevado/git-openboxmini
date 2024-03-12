@@ -24,7 +24,7 @@ function instalar_gimp() {
 }
 
 # Função para instalar o Poster Razor
-function instalar_poster_razor() {
+function instalar_poste_razor() {
   sudo apt install posterazor -y
   sudo apt -f install
 }
@@ -55,7 +55,7 @@ while true; do
 
   case $opcao in
     1) instalar_gimp ;;
-    2) instalar_poster_razor ;;
+    2) instalar_poste_razor ;;
     3) instalar_evince ;;
     4) instalar_xsane ;;
     5) instalar_todos ;;
