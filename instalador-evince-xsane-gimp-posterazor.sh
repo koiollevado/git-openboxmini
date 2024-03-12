@@ -7,7 +7,7 @@ function menu() {
   echo "           Escolha o programa que deseja instalar:"
   echo "------------------------------------------------------------" 
   echo "                       1. Gimp"
-  echo "                       2. Poster Razor"
+  echo "                       2. Poste Razor"
   echo "                       3. Evince"
   echo "                       4. Xsane"
   echo "                       5. TODOS"
