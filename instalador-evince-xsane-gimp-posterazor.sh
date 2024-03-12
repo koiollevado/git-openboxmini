@@ -25,7 +25,7 @@ function instalar_gimp() {
 
 # Função para instalar o Poster Razor
 function instalar_poster_razor() {
-  sudo apt install posterrazor -y
+  sudo apt install posterazor -y
   sudo apt -f install
 }
 
@@ -45,7 +45,7 @@ function instalar_todos() {
   sudo apt install xsane -y
   sudo apt install gimp -y
   sudo apt install evince -y
-  sudo apt install posterrazor -y
+  sudo apt install posterazor -y
   sudo apt -f install                   
 }
 
