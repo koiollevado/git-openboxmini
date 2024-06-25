@@ -50,7 +50,6 @@ mv Xresources ~/.Xresources
 mkdir -p /home/$USER/.config/openbox
 echo "plank &" > /home/$USER/.config/openbox/autostart
 echo "conky -c /home/$USER/.conkyrc &" >> ~/.config/openbox/autostart
-echo "/home/$USER/.wallpapers" >> ~/.config/openbox/autostart
 echo "rm /home/$USER/.cache/google-chrome/Default/Cache/Cache_Data/*_*" >> ~/.config/openbox/autostart
 echo "rm /home/$USER/.local/share/Trash/files/*" >> ~/.config/openbox/autostart
 echo "rm /home/$USER/.local/share/Trash/info/*" >> ~/.config/openbox/autostart
