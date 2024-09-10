@@ -1,0 +1,20 @@
+
+1. Instalar o HPLIP
+O pacote HPLIP já está disponível nos repositórios do Debian, então você pode instalá-lo facilmente com o seguinte comando:
+
+sudo apt update
+sudo apt install hplip hplip-gui
+
+2. Conecte sua impressora ao computador via USB.
+
+hp-setup
+
+3. Verificar Instalação e Testar Impressão
+
+lpstat -p
+
+4. Solução de Problemas
+Se encontrar algum problema, certifique-se de que os seguintes pacotes também estejam instalados:
+
+sudo apt install cups system-config-printer
+
