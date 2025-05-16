@@ -1,0 +1,47 @@
+Audacity
+BleachBit
+BleachBit (as root)
+conky
+Customize Look and Feel
+Desktop Preferences
+Document Viewer
+Document Viewer
+Fax address book
+File Manager PCManFM
+File Manager PCManFM
+Geany
+GNU Image Manipulation Program
+Google Chrome
+HPLIP Fax Utility
+HPLIP Toolbox
+HPLIP Toolbox
+LibreOffice Calc
+LibreOffice Draw
+LibreOffice Draw
+LibreOffice Impress
+LibreOffice Math
+LibreOffice Start Center
+LibreOffice Writer
+LXTerminal
+Openbox Configuration Manager
+Oracle VM VirtualBox
+Oracle VM VirtualBox
+Plank
+Print Preview
+Print Preview
+PulseAudio Volume Control
+PulseAudio Volume Control
+Python (v3.11)
+Screenshot
+Scribus
+System Profiler and Benchmark
+TeraBox
+TeXdoctk
+TeXworks
+Transmission (Qt)
+UXTerm
+Vim
+VLC media player
+Xarchiver
+XSane
+XTerm
