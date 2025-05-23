@@ -6,7 +6,7 @@
 set -e
 
 entrada="lsapps.txt"
-saida="test.xml"
+saida="menu.xml"
 
 if [[ -z $entrada || ! -f $entrada ]]; then
   echo "ERRO: informe o arquivo de entradas (.txt) como primeiro argumento." >&2
