@@ -45,9 +45,9 @@ while IFS= read -r file; do
 
     icon_path=$(get_icon_path "$icon_name")
 
-    echo "$app_name -- $icon_name" >> "$saida"
-    echo "\"$icon_path\"" >> "$saida"
-    echo "" >> "$saida"
+    echo "$app_name" >> "$saida"
+    echo "$icon_path" >> "$saida"
+    echo "" >> "$saida"  
 
 done <<< "$desktop_files"
 
