@@ -1,0 +1,10 @@
+Para criar um novo menu.xml, proceda:
+
+	1 - execute o apps.sh
+	2 - leia o apps.txt
+	3 - edite/personalise o lsapps.txt
+	4 - execute o scmenu.sh
+	5 - mova o menu.xml para o diretório
+		/$user/.config/openbox
+	6 - execute o comando
+		openbox --reconfigure
